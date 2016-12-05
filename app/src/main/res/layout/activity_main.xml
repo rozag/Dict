@@ -1,0 +1,133 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="RtlSymmetry">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/view_toolbar"/>
+
+    <TextView
+        android:id="@+id/numberTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/toolbar"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/secondary_text"
+        android:textSize="16sp"
+        tools:text="Number: 5"/>
+
+    <TextView
+        android:id="@+id/winrateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/numberTextView"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center"
+        android:textColor="@color/secondary_text"
+        android:textSize="16sp"
+        tools:text="Winrate: 90%"/>
+
+    <CheckBox
+        android:id="@+id/randomOrderCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="8dp"
+        android:foregroundGravity="center_vertical"
+        android:text="Random order"
+        android:textColor="@color/secondary_text"
+        android:textSize="16sp"
+        tools:ignore="HardcodedText"/>
+
+    <CheckBox
+        android:id="@+id/randomLangCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/randomOrderCheckBox"
+        android:layout_marginTop="8dp"
+        android:foregroundGravity="center_vertical"
+        android:text="Random lang"
+        android:textColor="@color/secondary_text"
+        android:textSize="16sp"
+        tools:ignore="HardcodedText"/>
+
+    <CheckBox
+        android:id="@+id/ruCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/randomLangCheckBox"
+        android:layout_marginTop="8dp"
+        android:checked="true"
+        android:foregroundGravity="center_vertical"
+        android:text="RU to EN"
+        android:textColor="@color/secondary_text"
+        android:textSize="16sp"
+        tools:ignore="HardcodedText"/>
+
+    <TextView
+        android:id="@+id/wordTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:gravity="center"
+        android:textColor="@color/primary_text"
+        android:textSize="18sp"
+        tools:text="According to ..."/>
+
+    <TextView
+        android:id="@+id/translationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wordTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:textColor="@color/secondary_text"
+        android:textSize="18sp"
+        tools:text="Согласно ..."/>
+
+    <Button
+        android:id="@+id/answerButton"
+        style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        tools:ignore="RelativeOverlap"
+        tools:text="Answer"/>
+
+    <Button
+        android:id="@+id/rememberButton"
+        style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:layout_toLeftOf="@id/answerButton"
+        android:layout_toStartOf="@id/answerButton"
+        tools:text="I remember"/>
+
+</RelativeLayout>
